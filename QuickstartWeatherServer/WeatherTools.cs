@@ -18,7 +18,7 @@ namespace QuickstartWeatherServer
         [McpServerTool, Description("Get weather forecast for a City.")]
         public static async Task<string> GetForecast(
             [Description("city")] string city,
-            [Description("country")] string country = "")
+            [Description("country, use ISO 2")] string country = "")
         {
             
             if (string.IsNullOrWhiteSpace(city))
